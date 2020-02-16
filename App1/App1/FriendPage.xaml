@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.FriendPage" Title="Информация об устройстве">
+    <StackLayout>
+        <Label Text="Код устройства" />
+        <Entry Text="{Binding Code}" />
+        <Label Text="Наименование" />
+        <Entry Text="{Binding Name}" />
+        <Label Text="Разработчик" />
+        <Entry Text="{Binding Creator}" />
+        <Label Text="Инженер-конструктор" />
+        <Entry Text="{Binding Ingk}" />
+        <Label Text="Инженер СГИП" />
+        <Entry Text="{Binding Ing}" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Сохранить" Clicked="SaveFriend" />
+            <Button Text="Удалить" Clicked="DeleteFriend" />
+            <Button Text="Отмена" Clicked="Cancel" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

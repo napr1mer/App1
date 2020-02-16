@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+
+
+    x:Class="App1.MainPage"> 
+
+    <StackLayout>
+
+        <Image Source="bastion.png" />
+        <Button x:Name="btnScan" HeightRequest="200" FontSize = "80" 
+                Text="Scan"                
+                Clicked="btnScan_Clicked" BackgroundColor="LightBlue" FontAttributes="Bold"/>
+        <Entry x:Name="txtBarcode" 
+               Placeholder="Информация из QR-кода"/>
+        <Button Margin="100" Text="База данных" Clicked="GoDB" />
+    </StackLayout>
+    
+
+</ContentPage>
